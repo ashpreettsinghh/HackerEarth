@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(){
+	int ctr1=0,ctr2=0;
+	char word[20];
+	
+	
+    scanf("%s",&word);
+
+	for(int i =0; i<20; i++)
+	{
+		if(word[i]=='z' || word[i]=='Z')
+		{
+			ctr1++;
+		}
+
+		else if (word[i]=='O' || word[i]=='o')
+		{
+			ctr2++;
+		}
+
+	}
+	
+     ctr1 = 2*ctr1;
+	if(ctr1==ctr2)
+	{
+		printf("Yes");
+	
+	}
+	else 
+	{
+		printf("No");
+	}
+
+	
+	
+}
